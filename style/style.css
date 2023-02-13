@@ -41,6 +41,7 @@
 .btn{
     background-color: var(--bg-btn);
     color: var(--lightcolor);
+    text-decoration: none;
 }
 img{
     width: 100%;
@@ -51,6 +52,9 @@ h1{
 }
 .m-top{
     margin-top: 100px;
+}
+.p-top-45{
+    padding-top: 45px;
 }
 /* html */
 html{
@@ -70,11 +74,12 @@ header{
     z-index: 100;
     background-color: var(--lightcolor);
     border-bottom: 1px solid black;
+    padding: 29px;
 }
 .list{
     list-style: none;
 }
-a{
+header a{
     text-decoration: none;
     color: var(---darkcolor);
     padding: 7px 13px;
@@ -85,13 +90,27 @@ a{
 /* main */
 #hero{
     background-color: var(--lightblue);
-    padding-top: 80px;
+    padding-top: 140px;
 }
 .hero-left{
     width: 30%;
 }
 .hero-right{
     width: 70%;
+}
+.hero-left p:first-child{
+    padding-bottom: 40px;
+}
+.p-hero{
+    padding:40px 0px 80px 0px;
+}
+.hero-right img{
+    margin-bottom: -80px
+}
+.scroll{
+    list-style: none;
+    color: var(---darkcolor);
+    font-size: 3rem;
 }
 #free-trial{
     background-color: var(--lightblue);
