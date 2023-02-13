@@ -53,8 +53,17 @@ h1{
 .m-top{
     margin-top: 100px;
 }
+.m-top-50{
+    margin-top: 50px;
+}
 .p-top-45{
     padding-top: 45px;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.p-20{
+    padding: 20px;
 }
 /* html */
 html{
@@ -76,7 +85,7 @@ header{
     border-bottom: 1px solid black;
     padding: 29px;
 }
-.list{
+li{
     list-style: none;
 }
 header a{
@@ -112,10 +121,50 @@ header a{
     color: var(---darkcolor);
     font-size: 3rem;
 }
+.card-plans{
+    border: 1px solid black;
+    width: 30%;
+}
+.title-card{
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid black;
+}
+#plans i{
+    padding-right: 5px;
+}
 #free-trial{
     background-color: var(--lightblue);
 }
 /* footer */
 footer{
     background-color: var(---darkcolor);
+    padding-top: 80px;
+}
+.footer-top{
+    padding-bottom: 50px
+}
+.footer-top h3{
+    color: var(--lightcolor);
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+}
+.footer-top a{
+    text-decoration: none;
+    color: var(--lightcolor);
+}
+.footer-top li{
+    padding-bottom: 10px;
+}
+.list{
+    max-width: calc(100% / 5);
+}
+.footer-bottom{
+    max-width: 11%;
+    color: var(--lightgrey);
+    padding: 45px 0px 40px 0px;
+    border-top: 1px solid var(--lightgrey);
+}
+.footer-bottom span{
+    padding: 0px 10px;
 }
