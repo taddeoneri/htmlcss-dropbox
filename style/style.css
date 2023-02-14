@@ -187,6 +187,13 @@ header a{
 .partner-right p{
     padding: 20px 0px 35px 0px;
 }
+.card-business{
+    max-width: 31%;
+    padding-top: 56px;
+}
+.card-business h3{
+    padding: 5px 0px 23px 0px;
+}
 #free-trial{
     background-color: var(--lightblue);
 }
