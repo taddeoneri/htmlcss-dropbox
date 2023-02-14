@@ -13,9 +13,10 @@
     --greenlogo: #A2D39B;
     --lightbluelogo: #0093CE;
     --redlogo: #FF1C1C;
-    --cherrylogo: #D5001F;
+    --redtwologo: #D5001F;
     --bluelogo: #0D2481;
-    --bananalogo: #FFD830; 
+    --yelllowlogo: #FFD830;
+    --brownlogo: #61082B; 
     --bordercolor: #D7D7DA;
 }
 .d-flex{
@@ -41,6 +42,9 @@
 }
 .start{
     justify-content: flex-start;
+}
+.align-start{
+    align-items: flex-start;
 }
 .btn{
     background-color: var(--bg-btn);
@@ -75,6 +79,9 @@ h3{
 }
 .p-30-25{
     padding: 30px 25px;
+}
+.blue-a{
+    color: var(--bg-btn);
 }
 /* html */
 html{
@@ -163,10 +170,7 @@ header a{
     padding: 20px 0px;
 }
 .line{
-    height: 1px;
-    width: 20%;
-    padding: 30px 0px;
-    border-bottom: 1px solid black;
+    width: 10px;
 }
 .check-blue i{
     color: var(--bg-btn);
@@ -194,8 +198,72 @@ header a{
 .card-business h3{
     padding: 5px 0px 23px 0px;
 }
+.customers-top{
+    width: 50%;
+}
+.customers-top p{
+    padding: 50px 0px 92px 0px;
+}
+.card-logo{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
+.logo{
+    width: 50%;
+    position: relative;
+}
+#left-green{
+    background-color: var(--greenlogo);
+}
+#left-brown{
+    background-color: var(--brownlogo);
+}
+#left-blue{
+    background-color: var(--lightbluelogo);
+}
+#left-red{
+    background-color: var(--redlogo);
+}
+#right-red{
+    background-color: var(--redtwologo);
+}
+#right-lightblue{
+    background-color: var(--lightblue);
+}
+#right-blue{
+    background-color: var(--bluelogo);
+}
+#right-yellow{
+    background-color: var(--yelllowlogo);
+}
+
+.bg-logo{
+    background-color: var(--lightgrey);
+}
+.logo img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo-center{
+    padding: 50px;
+}
+.logo-center img{
+    width: 48%;
+}
+.logo-p{
+    padding: 34px 0px 48px 0px;
+}
 #free-trial{
     background-color: var(--lightblue);
+}
+.trial-left{
+    width: 30%;
+}
+.trial-right{
+    width: 20%;
 }
 /* footer */
 footer{
