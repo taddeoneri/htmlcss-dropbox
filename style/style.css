@@ -6,7 +6,7 @@
 /* utility */
 :root{
     --lightcolor: #FFFFFF;
-    ---darkcolor: #000000;
+    --darkcolor: #000000;
     --lightblue: #B4D0E7;
     --bg-btn: #0061FF;
     --lightgrey: #F5F5F5;
@@ -16,6 +16,7 @@
     --cherrylogo: #D5001F;
     --bluelogo: #0D2481;
     --bananalogo: #FFD830; 
+    --bordercolor: #D7D7DA;
 }
 .d-flex{
     display: flex;
@@ -38,6 +39,9 @@
 .center{
     align-items: center;
 }
+.start{
+    justify-content: flex-start;
+}
 .btn{
     background-color: var(--bg-btn);
     color: var(--lightcolor);
@@ -45,10 +49,17 @@
 }
 img{
     width: 100%;
+    display: block;
 }
 h1{
     font-size: 4.5rem;
     font-weight: 800;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.3rem;
 }
 .m-top{
     margin-top: 100px;
@@ -62,8 +73,8 @@ h1{
 .wrap{
     flex-wrap: wrap;
 }
-.p-20{
-    padding: 20px;
+.p-30-25{
+    padding: 30px 25px;
 }
 /* html */
 html{
@@ -90,7 +101,7 @@ li{
 }
 header a{
     text-decoration: none;
-    color: var(---darkcolor);
+    color: var(--darkcolor);
     padding: 7px 13px;
 }
 #logo{
@@ -101,10 +112,10 @@ header a{
     background-color: var(--lightblue);
     padding-top: 140px;
 }
-.hero-left{
+.widht-30{
     width: 30%;
 }
-.hero-right{
+.widht-70{
     width: 70%;
 }
 .hero-left p:first-child{
@@ -113,36 +124,79 @@ header a{
 .p-hero{
     padding:40px 0px 80px 0px;
 }
-.hero-right img{
+.widht-70 img{
     margin-bottom: -80px
 }
 .scroll{
     list-style: none;
-    color: var(---darkcolor);
+    color: var(--darkcolor);
     font-size: 3rem;
 }
 .card-plans{
-    border: 1px solid black;
-    width: 30%;
+    width: 31%;
+}
+.border{
+    border: 1px solid var(--bordercolor);
 }
 .title-card{
     text-align: center;
     padding: 12px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--bordercolor)
 }
 #plans i{
     padding-right: 5px;
+}
+.option-plans{
+    padding-left: 60px;
+}
+#plans h3{
+    padding-bottom: 20px;
+}
+.p-plan{
+    padding: 10px 0px 50px 0px;
+    color: grey;
+}
+.card-plans li{
+    padding-bottom: 18px;
+}
+.btn-plans{
+    padding: 20px 0px;
+}
+.line{
+    height: 1px;
+    width: 20%;
+    padding: 30px 0px;
+    border-bottom: 1px solid black;
+}
+.check-blue i{
+    color: var(--bg-btn);
+}
+.plans-bottom{
+    width: 100%;
+}
+#p-plans-bottom{
+    padding-bottom: 40px;
+}
+.partner-left{
+    width: 60%;
+}
+.partner-right{
+    width: 40%;
+    padding: 45px;
+}
+.partner-right p{
+    padding: 20px 0px 35px 0px;
 }
 #free-trial{
     background-color: var(--lightblue);
 }
 /* footer */
 footer{
-    background-color: var(---darkcolor);
+    background-color: var(--darkcolor);
     padding-top: 80px;
 }
 .footer-top{
-    padding-bottom: 50px
+    padding-bottom: 50px;
 }
 .footer-top h3{
     color: var(--lightcolor);
