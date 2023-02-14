@@ -51,6 +51,11 @@
     color: var(--lightcolor);
     text-decoration: none;
 }
+.light-btn{
+    background-color: var(--lightcolor);
+    color: var(--darkcolor);
+    text-decoration: none;
+}
 img{
     width: 100%;
     display: block;
@@ -85,6 +90,12 @@ h3{
 }
 .blue-a{
     color: var(--bg-btn);
+}
+.p-btn1{
+    padding: 10px 15px;
+}
+.p-btn2{
+    padding: 10px 30px;
 }
 /* html */
 html{
@@ -131,8 +142,11 @@ header a{
 .hero-left p:first-child{
     padding-bottom: 40px;
 }
-.p-hero{
+.p1-hero{
     padding:40px 0px 80px 0px;
+}
+.p2-hero{
+    padding-bottom: 30px;
 }
 .widht-70 img{
     margin-bottom: -80px
@@ -141,6 +155,9 @@ header a{
     list-style: none;
     color: var(--darkcolor);
     font-size: 3rem;
+}
+.partner-right a{
+    border: 1px solid var(--darkcolor);
 }
 .card-plans{
     width: 31%;
@@ -151,7 +168,7 @@ header a{
 .title-card{
     text-align: center;
     padding: 12px;
-    border-bottom: 1px solid var(--bordercolor)
+    border-bottom: 1px solid var(--bordercolor);
 }
 #plans i{
     padding-right: 5px;
@@ -169,8 +186,13 @@ header a{
 .card-plans li{
     padding-bottom: 18px;
 }
+.card-plans hr{
+    width: 25%;
+    margin: 40px 0px;
+    border: 1px solid var(--bordercolor);
+}
 .btn-plans{
-    padding: 20px 0px;
+    margin: 35px 0px 30px 0px;
 }
 .line{
     width: 10px;
@@ -211,6 +233,11 @@ header a{
     width: calc(100vw / 3);
     height: calc(100vw / 3);
 }
+.card-logo hr{
+    width: 20%;
+    margin: 45px 0px;
+    border: 1px solid var(--bordercolor);
+}
 .logo{
     width: 50%;
     position: relative;
@@ -239,7 +266,6 @@ header a{
 #right-yellow{
     background-color: var(--yelllowlogo);
 }
-
 .bg-logo{
     background-color: var(--lightgrey);
 }
@@ -249,6 +275,7 @@ header a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: invert(100%) sepia(0%) saturate(7475%) hue-rotate(101deg) brightness(128%) contrast(92%);
 }
 .logo-center{
     padding: 50px;
@@ -270,7 +297,11 @@ header a{
     color: var(--brownlogo);
 }
 .trial-right{
-    width: 20%;
+    width: 30%;
+    margin-top: 10px;
+}
+.trial-right a{
+    padding: 10px 50px;
 }
 .question{
     padding: 37px 0px;
@@ -281,6 +312,15 @@ header a{
 }
 #faqs h2{
     padding-bottom: 50px;
+}
+.question p{
+    padding-top: 25px;
+}
+details > summary {
+    list-style-type: none;
+}
+.question span{
+    padding-left: 340px;
 }
 /* footer */
 footer{
@@ -313,4 +353,39 @@ footer{
 }
 .footer-bottom span{
     padding: 0px 10px;
+}
+
+
+.box{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+}
+.box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.box input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.box input:checked ~ .checkmark:after {
+    display: block;
 }
