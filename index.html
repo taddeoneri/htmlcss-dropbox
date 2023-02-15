@@ -15,8 +15,8 @@
     <!-- fixed header widht 100% -->
     <header class="d-flex">
         <div class="d-flex center">
-            <ul class="d-flex">
-                <li><img id="logo" src="./img/logo-small.png" alt="Logo"></li>
+            <span><a href="#"><img id="logo" src="./img/logo-small.png" alt="Logo"></span></a>
+            <ul class="d-flex center">
                 <li><a href="#">Perché Dropbox</a></li>
                 <li><a href="#">Funzioni</a></li>
                 <li><a href="#">Piani e Prezzi</a></li>
@@ -27,8 +27,8 @@
                 <li><a href="#">Supporto</a></li>
                 <li><a href="#">Contatta l'ufficio vendite</a></li>
                 <li><a href="#">Accedi</a></li>
-                <li><a class="btn" href="#">Inizia</a></li>
-            </ul> 
+            </ul>
+            <a class="btn" href="#">Inizia</a>
         </div>
     </header>
     <main>
@@ -41,7 +41,7 @@
                     <p class="p2-hero">Finalmente tutti i toui strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
                     <a class="btn p-btn1" href="#">Inizia la tua prova gratuita</a>
                     <p class="p1-hero">Annulla in qualsiasi momento</p>
-                    <a class="scroll" href="#faqs"><i class="fa-solid fa-arrow-down"></i></a>
+                    <a class="scroll" href="#plans"><i class="fa-solid fa-arrow-down"></i></a>
                 </div>
                 <div class="widht-70">
                     <img src="./img/jumbo.png" alt="Hero">
@@ -54,12 +54,12 @@
                     <h2>Trova il piano business che fa per te</h2>
                 </div>
                 <div class="d-flex start p-top-45">
-                    <div class="box">Fatturazione mensile
-                        <input type="radio" checked="checked" name="radio">
+                    <div class="box p-right-55">Fatturazione mensile
+                        <input type="radio" checked name="radio">
                         <span class="checkmark"></span>
                     </div>
-                    <div class="option-plans box">Fatturazione annuale
-                        <input type="radio" checked="checked" name="radio">
+                    <div class="box">Fatturazione annuale
+                        <input type="radio" name="radio">
                         <span class="checkmark"></span>
                     </div>
                 </div>
@@ -109,7 +109,10 @@
                             <hr>
                             <ul class="check-blue">
                                 <li><strong>Punti salienti del piano</strong></li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Nessun limite di spazio per i file</li>
+                                <li class="d-flex">
+                                    <i class="fa-sharp fa-solid fa-check"></i>
+                                    <span>Nessun limite di spazio per i file</span>
+                                </li>
                                 <li><i class="fa-sharp fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
                                 <li><i class="fa-sharp fa-solid fa-check"></i>Risparmio del 50% rispetto alle iscrizioni singole</li>
                                 <li><i class="fa-sharp fa-solid fa-check"></i>Possibilità di inserire nuovi membri del team</li>
@@ -232,7 +235,7 @@
                         <img src="./img/topps.svg" alt="Logo4">
                     </div>
                 </div>
-                <div class="card-logo bg-logo">
+                <div class="card-logo bg-logo overflow">
                     <div class="logo-center">
                         <img src="./img/designit.svg" alt="Logo Center">
                         <hr>
