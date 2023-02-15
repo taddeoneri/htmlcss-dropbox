@@ -10,6 +10,7 @@
     --lightblue: #B4D0E7;
     --lightbluehover: #DAE8F3;
     --bg-btn: #0061FF;
+    --bg-btnhover: #297EFE;
     --lightgrey: #F5F5F5;
     --greenlogo: #A2D39B;
     --greenhover: #D1E9CD;
@@ -59,10 +60,16 @@
     color: var(--lightcolor);
     text-decoration: none;
 }
+.btn:hover{
+    background-color: var(--bg-btnhover);
+}
 .light-btn{
     background-color: var(--lightcolor);
     color: var(--darkcolor);
     text-decoration: none;
+}
+.light-btn:hover{
+    background-color: var(--lightgrey);
 }
 img{
     width: 100%;
