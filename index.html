@@ -54,13 +54,13 @@
                     <h2>Trova il piano business che fa per te</h2>
                 </div>
                 <div class="d-flex start p-top-45">
-                    <div class="box p-right-55">Fatturazione mensile
-                        <input type="radio" checked name="radio">
-                        <span class="checkmark"></span>
+                    <div class="box p-right-55">
+                        <input type="radio" name="plan" id="mensile" value="mensile" checked>
+                        <label for="mensile">Fatturazione mensile</label>
                     </div>
-                    <div class="box">Fatturazione annuale
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
+                    <div class="box">
+                        <input type="radio" name="plan" id="annuale" value="annuale">
+                        <label for="annuale">Fatturazione annuale</label>
                     </div>
                 </div>
                 <div class="d-flex wrap m-top-50">
@@ -68,7 +68,7 @@
                         <div class="title-card">
                             <p><i class="fa-solid fa-user"></i>Singolo</p>
                         </div>
-                        <div class="p-30-25">
+                        <div class="p-30-22">
                             <h3>Professional</h3>
                             <strong>&euro; 12.00</strong>
                             <p class="p-plan">/mese</p>
@@ -84,8 +84,16 @@
                             <hr>
                             <ul class="check-blue">
                                 <li><strong>Punti salienti del piano</strong></li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Invia file fino a 100GB con Dropbox Transfer</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                                <li class="d-flex start">
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-check"></i>
+                                        <span>Invia file fino a 100GB con Dropbox Transfer</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex start">
+                                    <i class="fa-sharp fa-solid fa-check"></i>
+                                    <span>Cartelle offline su dispositivi mobili</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -93,7 +101,7 @@
                         <div class="title-card">
                             <p><i class="fa-solid fa-users"></i>Team</p>
                         </div>
-                        <div class="p-30-25">
+                        <div class="p-30-22">
                             <h3>Advanced</h3>
                             <strong>&euro; 18.00</strong>
                             <p class="p-plan">/utente/mese</p>
@@ -109,14 +117,26 @@
                             <hr>
                             <ul class="check-blue">
                                 <li><strong>Punti salienti del piano</strong></li>
-                                <li class="d-flex">
+                                <li class="d-flex start">
                                     <i class="fa-sharp fa-solid fa-check"></i>
                                     <span>Nessun limite di spazio per i file</span>
                                 </li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Risparmio del 50% rispetto alle iscrizioni singole</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Possibilità di inserire nuovi membri del team</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Gestione dei permessi i base ai ruoli</li>
+                                <li class="d-flex start">
+                                    <i class="fa-sharp fa-solid fa-check"></i>
+                                    <span>Cartelle offline su dispositivi mobili</span>
+                                </li>
+                                <li class="d-flex start">
+                                    <i class="fa-sharp fa-solid fa-check"></i>
+                                    <span>Risparmio del 50% rispetto alle iscrizioni singole</span>
+                                </li>
+                                <li class="d-flex start">
+                                    <i class="fa-sharp fa-solid fa-check"></i>
+                                    <span>Possibilità di inserire nuovi membri del team</span>
+                                </li>
+                                <li class="d-flex start">
+                                    <i class="fa-sharp fa-solid fa-check"></i>
+                                    <span>Gestione dei permessi i base ai ruoli</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -124,7 +144,7 @@
                         <div class="title-card">
                             <p><i class="fa-solid fa-building"></i>Azienda</p>
                         </div>
-                        <div class="p-30-25">
+                        <div class="p-30-22">
                             <h3>Enterprise</h3>
                             <strong>Contattaci</strong>
                             <p class="p-plan">-</p>
@@ -140,9 +160,18 @@
                             <hr>
                             <ul class="check-blue">
                                 <li><strong>Punti salienti del piano</strong></li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Servizio assistenza 24/h</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i>Possibilità di personalizzazione totale</li>
+                                <li class="d-flex start">
+                                    <i class="fa-sharp fa-solid fa-check"></i>
+                                    <span>Cartelle offline su dispositivi mobili</span>
+                                </li>
+                                <li class="d-flex start">
+                                    <i class="fa-sharp fa-solid fa-check"></i>
+                                    <span>Servizio assistenza 24/h</span>
+                                </li>
+                                <li class="d-flex start">
+                                    <i class="fa-sharp fa-solid fa-check"></i>
+                                    <span>Possibilità di personalizzazione totale</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -151,7 +180,7 @@
                     <div class="title-card">
                         <p><i class="fa-solid fa-building"></i>Team</p>
                     </div>
-                    <div class="d-flex p-30-25">
+                    <div class="d-flex p-30-22">
                         <div class="widht-70">
                             <h3>Enterprise</h3>
                             <p id="p-plans-bottom"><strong>Contatta l'ufficio vendite per i prezzi</strong></p>
@@ -272,21 +301,21 @@
         <section id="faqs">
             <div class="small-container p-130">
                 <h2>Domande frequenti</h2>
-                <div class="question"> 
-                    <details>
-                        <summary>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced<span><i class="fa-solid fa-angle-down"></i></span></summary>
+            <div class="question"> 
+                    <details class="p-relative">
+                        <summary>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?<span><i class="fa-solid fa-angle-down"></i></span></summary>
                         <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business AdvancedQual è la differenza tra Dropbox Business Standard e Dropbox Business AdvancedQual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</p>
                     </details>           
                 </div>
                 <div class="question">
-                    <details>
-                        <summary>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced<span><i class="fa-solid fa-angle-down"></i></span></summary>
+                    <details class="p-relative">
+                        <summary>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?<span><i class="fa-solid fa-angle-down"></i></span></summary>
                         <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business AdvancedQual è la differenza tra Dropbox Business Standard e Dropbox Business AdvancedQual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</p>
                     </details>       
                 </div>
                 <div class="question border-bottom">
-                    <details>
-                        <summary>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced<span><i class="fa-solid fa-angle-down"></i></span></summary>
+                    <details class="p-relative">
+                        <summary>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?<span><i class="fa-solid fa-angle-down"></i></span></summary>
                         <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business AdvancedQual è la differenza tra Dropbox Business Standard e Dropbox Business AdvancedQual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</p>
                     </details>           
                 </div>

@@ -8,15 +8,23 @@
     --lightcolor: #FFFFFF;
     --darkcolor: #000000;
     --lightblue: #B4D0E7;
+    --lightbluehover: #DAE8F3;
     --bg-btn: #0061FF;
     --lightgrey: #F5F5F5;
     --greenlogo: #A2D39B;
+    --greenhover: #D1E9CD;
     --lightbluelogo: #0093CE;
+    --lightbluelogohover: #80C9E7;
     --redlogo: #FF1C1C;
+    --redhover: #FF8E8E;
     --redtwologo: #D5001F;
+    --redtwohover: #EA808F;
     --bluelogo: #0D2481;
-    --yelllowlogo: #FFD830;
-    --brownlogo: #61082B; 
+    --bluehover: #8692C0;
+    --yellowlogo: #FFD830;
+    --yellowhover: #FFEC98;
+    --brownlogo: #61082B;
+    --brownhover: #B08495; 
     --bordercolor: #D7D7DA;
 }
 .d-flex{
@@ -85,8 +93,8 @@ h3{
 .wrap{
     flex-wrap: wrap;
 }
-.p-30-25{
-    padding: 30px 25px;
+.p-30-22{
+    padding: 30px 22px;
 }
 .blue-a{
     color: var(--bg-btn);
@@ -122,6 +130,9 @@ header{
     background-color: var(--lightcolor);
     border-bottom: 1px solid var(--lightgrey);
     padding: 29px;
+}
+header a.btn{
+    padding: 6px 15px;
 }
 header li{
     padding: 27px 15px;
@@ -182,7 +193,7 @@ header a{
     border-bottom: 1px solid var(--bordercolor);
 }
 #plans i{
-    padding-right: 5px;
+    padding:4px 5px 0px 0px;
 }
 #plans h3{
     padding-bottom: 20px;
@@ -232,7 +243,7 @@ header a{
     padding: 5px 0px 23px 0px;
 }
 .customers-top{
-    width: 50%;
+    width: 60%;
 }
 .customers-top p{
     padding: 50px 0px 110px 0px;
@@ -249,30 +260,57 @@ header a{
 .logo{
     width: 50%;
     position: relative;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;;
+    transition-delay: 0.15s;
 }
 #left-green{
     background-color: var(--greenlogo);
 }
+#left-green:hover{
+    box-shadow:0px 0px 0px 10px var(--greenhover) inset;
+}
 #left-brown{
     background-color: var(--brownlogo);
+}
+#left-brown:hover{
+    box-shadow:0px 0px 0px 10px var(--brownhover) inset;
 }
 #left-blue{
     background-color: var(--lightbluelogo);
 }
+#left-blue:hover{
+    box-shadow:0px 0px 0px 10px var(--lightbluelogohover) inset;
+}
 #left-red{
     background-color: var(--redlogo);
+}
+#left-red:hover{
+    box-shadow:0px 0px 0px 10px var(--redhover) inset;
 }
 #right-red{
     background-color: var(--redtwologo);
 }
+#right-red:hover{
+    box-shadow:0px 0px 0px 10px var(--redtwohover) inset;
+}
 #right-lightblue{
     background-color: var(--lightblue);
+}
+#right-lightblue:hover{
+    box-shadow:0px 0px 0px 10px var(--lightbluehover) inset;
 }
 #right-blue{
     background-color: var(--bluelogo);
 }
+#right-blue:hover{
+    box-shadow:0px 0px 0px 10px var(--bluehover) inset;
+}
 #right-yellow{
-    background-color: var(--yelllowlogo);
+    background-color: var(--yellowlogo);
+}
+#right-yellow:hover{
+    box-shadow:0px 0px 0px 10px var(--yellowhover) inset;
 }
 .bg-logo{
     background-color: var(--lightgrey);
@@ -315,20 +353,25 @@ header a{
     padding: 37px 0px;
     border-top: 1px solid var(--darkcolor);
 }
+.question p{
+    padding-top: 25px;
+}
+.p-relative{
+    position: relative;
+}
+.question span{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 .border-bottom{
     border-bottom: 1px solid var(--darkcolor);
 }
 #faqs h2{
     padding-bottom: 50px;
 }
-.question p{
-    padding-top: 25px;
-}
-details > summary {
+summary {
     list-style-type: none;
-}
-.question span{
-    padding-left: 340px;
 }
 /* footer */
 footer{
@@ -362,38 +405,6 @@ footer{
 .footer-bottom span{
     padding: 0px 10px;
 }
-
-
-.box{
-    display: block;
-    position: relative;
-    padding-left: 25px;
-    cursor: pointer;
-    font-size: 15px;
-    user-select: none;
-}
-.box input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-    border-radius: 50%;
-}
-.box input:checked ~ .checkmark {
-    background-color: #2196F3;
-}
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-.box input:checked ~ .checkmark:after {
-    display: block;
+footer a:hover{
+    text-decoration: underline;
 }
